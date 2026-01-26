@@ -5,7 +5,7 @@ const base_url = "http://localhost:3030/api/v1/users";
 export const getUser = async () => {
   try {
     const response = await axios.get(base_url, { withCredentials: true });
-    return response.data?.data || []; // optional chaining
+    return response.data?.data;
   } catch (error) {
     console.log(error);
   }
@@ -14,7 +14,7 @@ export const getUser = async () => {
 export const postUser = async (data) => {
   try {
     const response = await axios.post(base_url, data, {
-      Headers: {
+      headers: {
         "Content-Type": "text/plain",
       },
       withCredentials: true,
@@ -27,7 +27,7 @@ export const postUser = async (data) => {
 
 export const updateUser = async (id, data) => {
   try {
-    const response = await axios.put(`${base_url}/id`, data, {
+    const response = await axios.put(`${base_url}/${id}`, data, {
       headers: {
         "Content-Type": "application/json",
       },
@@ -36,5 +36,17 @@ export const updateUser = async (id, data) => {
     return response.data?.data;
   } catch (error) {
     console.log(error);
+  }
+};
+
+export const deleteUser = async (id) => {
+  try {
+    const response = await axios.delete(`${base_url}/${id}`, {
+      withCredentials: true,
+    });
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
   }
 };

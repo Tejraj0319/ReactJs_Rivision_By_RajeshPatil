@@ -26,7 +26,7 @@ const App = () => {
       {/* <UseRef/> */}
       {/* <UseContext/> */}
       {/* <UseMemo/> */}
-      {/* <UseCallback/> */}
+      <UseCallback/>
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
