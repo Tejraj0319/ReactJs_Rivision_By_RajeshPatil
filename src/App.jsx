@@ -1,18 +1,21 @@
-import React from 'react'
-import ControlledComponents from './Components/ControlledComponents'
-import UncontrolledComponents from './Components/UncontrolledComponents'
-import UseState from './Hooks/UseState'
-import UseEffect from './Hooks/UseEffect'
-import UseRef from './Hooks/UseRef'
-import UseMemo from './Hooks/UseMemo'
-import UseCallback from './Hooks/UseCallback'
-import AppRoutes from './React_Router/AppRoutes'
-import Grid from './Grid'
-import ContextApi from './ContextAPI/ContextApi'
-import UseContext from './Hooks/UseContext'
-import ChildToParentDataPass from './praticalQuestions/ChildToParentDataPass'
-import Child from './props/Child'
-import Parent from './props/Parent'
+// import React from "react";
+// import ControlledComponents from "./Components/ControlledComponents";
+// import UncontrolledComponents from "./Components/UncontrolledComponents";
+// import UseState from "./Hooks/UseState";
+// import UseEffect from "./Hooks/UseEffect";
+// import UseRef from "./Hooks/UseRef";
+// import UseMemo from "./Hooks/UseMemo";
+// import UseCallback from "./Hooks/UseCallback";
+// import AppRoutes from "./React_Router/AppRoutes";
+// import Grid from "./Grid";
+// import ContextApi from "./ContextAPI/ContextApi";
+// import UseContext from "./Hooks/UseContext";
+// import ChildToParentDataPass from "./praticalQuestions/ChildToParentDataPass";
+// import Child from "./props/Child";
+// import Parent from "./props/Parent";
+// import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
+// import UserList from "./praticalQuestions/UserList";
+import FetchData from "./praticalQuestions/FetchData";
 
 
 const App = () => {
@@ -26,13 +29,18 @@ const App = () => {
       {/* <UseRef/> */}
       {/* <UseContext/> */}
       {/* <UseMemo/> */}
-      <UseCallback/>
+      {/* <UseCallback/> */}
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
-      {/* <ChildToParentDataPass/> */}
-    </div>
-  )
-}
 
-export default App
+      {/* PRACTICAL QUESTIONS   */}
+      {/* <ChildToParentDataPass/> */}
+      {/* <SearchAndFilter/> */}
+      {/* <UserList /> */}
+      <FetchData/>
+    </div>
+  );
+};
+
+export default App;
