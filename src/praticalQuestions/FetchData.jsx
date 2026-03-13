@@ -42,5 +42,4 @@ const FetchData = () => {
     </div>
   );
 };
-
 export default FetchData;
