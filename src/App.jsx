@@ -15,7 +15,8 @@
 // import Parent from "./props/Parent";
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
 // import UserList from "./praticalQuestions/UserList";
-import FetchData from "./praticalQuestions/FetchData";
+// import FetchData from "./praticalQuestions/FetchData";
+import ListManager from "./praticalQuestions/HackerRank/ListManager";
 
 
 const App = () => {
@@ -38,7 +39,8 @@ const App = () => {
       {/* <ChildToParentDataPass/> */}
       {/* <SearchAndFilter/> */}
       {/* <UserList /> */}
-      <FetchData/>
+      {/* <FetchData/> */}
+      <ListManager/>
     </div>
   );
 };
