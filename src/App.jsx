@@ -16,7 +16,9 @@
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
 // import UserList from "./praticalQuestions/UserList";
 // import FetchData from "./praticalQuestions/FetchData";
-import ListManager from "./praticalQuestions/HackerRank/ListManager";
+// import ListManager from "./praticalQuestions/HackerRank/ListManager";
+
+import CodeReviewFeedback from "./praticalQuestions/HackerRank/CodeReviewFeedback";
 
 
 const App = () => {
@@ -40,7 +42,8 @@ const App = () => {
       {/* <SearchAndFilter/> */}
       {/* <UserList /> */}
       {/* <FetchData/> */}
-      <ListManager/>
+      {/* <ListManager/> */}
+      <CodeReviewFeedback/>
     </div>
   );
 };
