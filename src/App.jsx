@@ -19,6 +19,7 @@
 // import ListManager from "./praticalQuestions/HackerRank/ListManager";
 
 import CodeReviewFeedback from "./praticalQuestions/HackerRank/CodeReviewFeedback";
+import PatientMedicalRecords from "./praticalQuestions/HackerRank/MedicalRecords/PatientMedicalRecords";
 
 
 const App = () => {
@@ -43,7 +44,9 @@ const App = () => {
       {/* <UserList /> */}
       {/* <FetchData/> */}
       {/* <ListManager/> */}
-      <CodeReviewFeedback/>
+      {/* <CodeReviewFeedback/> */}
+
+      <PatientMedicalRecords/>
     </div>
   );
 };
