@@ -18,9 +18,9 @@
 // import FetchData from "./praticalQuestions/FetchData";
 // import ListManager from "./praticalQuestions/HackerRank/ListManager";
 
+import BlogPost from "./praticalQuestions/HackerRank/Blogpost";
 import CodeReviewFeedback from "./praticalQuestions/HackerRank/CodeReviewFeedback";
 import PatientMedicalRecords from "./praticalQuestions/HackerRank/MedicalRecords/PatientMedicalRecords";
-
 
 const App = () => {
   return (
@@ -46,7 +46,8 @@ const App = () => {
       {/* <ListManager/> */}
       {/* <CodeReviewFeedback/> */}
 
-      <PatientMedicalRecords/>
+      {/* <PatientMedicalRecords/> */}
+      <BlogPost />
     </div>
   );
 };
