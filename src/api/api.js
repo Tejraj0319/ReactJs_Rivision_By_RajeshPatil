@@ -50,3 +50,34 @@ export const deleteUser = async (id) => {
     throw error;
   }
 };
+
+
+// export const remove = async(id)=>{
+//     try {
+//     const response = await fetch(`${base_url}/${id}`,{
+//       method:"DELETE",
+//       credentials:"include"
+//     })
+//     return response;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+
+// export const post = async(data)=>{
+//   try{
+//     const resp = await fetch(base_url,{
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       credentials:"include",
+//       body:JSON.stringify(data)
+//     })
+//     const response = await resp.json()
+//     return response;
+//   }catch(error){
+//       console.log(error)
+//   }
+// }
