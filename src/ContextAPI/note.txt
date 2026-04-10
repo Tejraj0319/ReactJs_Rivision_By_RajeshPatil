@@ -1,0 +1,17 @@
+When you are passing data from one component to other component which is far away from that component at that time you can use context api.
+e.g. amazon store when you click any product add to cart then haw that data is getting send to cart cause both component are far from each other
+
+but it has limited scope 
+
+suppose if you have big project which has more then 500 component so at that time it is not feasible way thats why you use redux or redux toolkit
+
+
+Haw redux toolkit works ?
+redux/redux toolkit has store one submitted data get stored in store and from that the data is passed ot other components
+add_to_cart => redux store => cart
+
+
+-redux toolkit build on top of redux
+-redux toolkit has less files to create 
+-redux toolkit has less code to write 
+-redux toolkit has less code complexity
