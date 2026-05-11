@@ -18,9 +18,8 @@
 // import FetchData from "./praticalQuestions/FetchData";
 // import ListManager from "./praticalQuestions/HackerRank/ListManager";
 
-import BlogPost from "./praticalQuestions/HackerRank/Blogpost";
-import CodeReviewFeedback from "./praticalQuestions/HackerRank/CodeReviewFeedback";
-import PatientMedicalRecords from "./praticalQuestions/HackerRank/MedicalRecords/PatientMedicalRecords";
+import ItemListManager from "./praticalQuestions/HackerRank/ItemListManager/ItemListManager";
+
 
 const App = () => {
   return (
@@ -43,11 +42,9 @@ const App = () => {
       {/* <SearchAndFilter/> */}
       {/* <UserList /> */}
       {/* <FetchData/> */}
-      {/* <ListManager/> */}
-      {/* <CodeReviewFeedback/> */}
 
-      {/* <PatientMedicalRecords/> */}
-      <BlogPost />
+      {/* Hacker Rank */}
+      <ItemListManager/>
     </div>
   );
 };
