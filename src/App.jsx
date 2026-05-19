@@ -18,7 +18,9 @@
 // import FetchData from "./praticalQuestions/FetchData";
 // import ListManager from "./praticalQuestions/HackerRank/ListManager";
 
-import ItemListManager from "./praticalQuestions/HackerRank/ItemListManager/ItemListManager";
+import CodeReviewFeedback from "./praticalQuestions/HackerRank/codeReviewFeedback/CodeReviewFeedback";
+
+// import ItemListManager from "./praticalQuestions/HackerRank/ItemListManager/ItemListManager";
 
 
 const App = () => {
@@ -44,7 +46,8 @@ const App = () => {
       {/* <FetchData/> */}
 
       {/* Hacker Rank */}
-      <ItemListManager/>
+      {/* <ItemListManager/> */}
+      <CodeReviewFeedback/>
     </div>
   );
 };
