@@ -1,40 +1,33 @@
-import React, { useMemo, useState } from "react";
+import React, { useState, useMemo } from "react";
 
 const UseMemo = () => {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
-  //   WITHOUT USEMEMO :-
-  // const doubleCount = (() => {
-  //   console.log("Calculating double (no useMemo)...");
-  //   return count * 2;
-  // })();
+  (function () {
+    console.log("Page is re-rendering!!!");
+  })();
 
-  //  WITH USEMEMO :-
-  const doubleCount = useMemo(() => {
-    console.log("Calculating double...");
-    return count * 2;
+  const triple = useMemo(() => {
+    console.log("Triple with useMemo......");
+    return count * 3;
   }, [count]);
 
   return (
     <div>
-      <h2>Count: {count}</h2>
-      <h3>Double: {doubleCount}</h3>
+      <h2>{text}</h2>
+      <h2>{triple}</h2>
 
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(0)}>Reset</button>
-
-      <br />
-      <br />
       <input
         type="text"
-        placeholder="Type something..."
+        placeholder="Enter Text..."
         value={text}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => {
+          setText(e.target.value);
+        }}
       />
-      <p>You typed: {text}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
   );
 };
-
 export default UseMemo;
