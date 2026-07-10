@@ -14,16 +14,11 @@
 // import Child from "./props/Child";
 // import Parent from "./props/Parent";
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
-// import UserList from "./praticalQuestions/UserList";
-// import FetchData from "./praticalQuestions/FetchData";
-// import ListManager from "./praticalQuestions/HackerRank/ListManager";
-
-import CodeReviewFeedback from "./praticalQuestions/HackerRank/codeReviewFeedback/CodeReviewFeedback";
-
-// import ItemListManager from "./praticalQuestions/HackerRank/ItemListManager/ItemListManager";
-
+import ChildHoc from "./HOC/ChildHoc";
+import ParentHoc from "./HOC/ParentHoc";
 
 const App = () => {
+  const HocFunc = ParentHoc(ChildHoc);
   return (
     <div>
       {/* <ControlledComponents/> */}
@@ -38,16 +33,7 @@ const App = () => {
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
-
-      {/* PRACTICAL QUESTIONS   */}
-      {/* <ChildToParentDataPass/> */}
-      {/* <SearchAndFilter/> */}
-      {/* <UserList /> */}
-      {/* <FetchData/> */}
-
-      {/* Hacker Rank */}
-      {/* <ItemListManager/> */}
-      <CodeReviewFeedback/>
+      <HocFunc />
     </div>
   );
 };
