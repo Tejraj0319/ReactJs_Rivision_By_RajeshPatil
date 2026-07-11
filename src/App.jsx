@@ -14,11 +14,12 @@
 // import Child from "./props/Child";
 // import Parent from "./props/Parent";
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
-import ChildHoc from "./HOC/ChildHoc";
-import ParentHoc from "./HOC/ParentHoc";
+// import ChildHoc from "./HOC/ChildHoc";
+// import ParentHoc from "./HOC/ParentHoc";
+import ParentCallback from "./callback/ParentCallback";
 
 const App = () => {
-  const HocFunc = ParentHoc(ChildHoc);
+  // const HocFunc = ParentHoc(ChildHoc);
   return (
     <div>
       {/* <ControlledComponents/> */}
@@ -33,7 +34,8 @@ const App = () => {
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
-      <HocFunc />
+      {/* <HocFunc /> */}
+      <ParentCallback />
     </div>
   );
 };
