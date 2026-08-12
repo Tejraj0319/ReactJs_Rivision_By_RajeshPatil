@@ -2,10 +2,11 @@
 import React from "react";
 
 const ParentHoc = (Callbackfunction) => {
-  return function newFunc() {
+  // return new component
+  return function NewFunc(props) {
     return (
       <div>
-        <Callbackfunction />
+        <Callbackfunction {...props} />
       </div>
     );
   };

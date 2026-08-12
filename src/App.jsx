@@ -14,12 +14,24 @@
 // import Child from "./props/Child";
 // import Parent from "./props/Parent";
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
-// import ChildHoc from "./HOC/ChildHoc";
-// import ParentHoc from "./HOC/ParentHoc";
-import ParentCallback from "./callback/ParentCallback";
+import ChildHoc from "./HOC/ChildHoc";
+import ParentHoc from "./HOC/ParentHoc";
+// import ParentCallback from "./callback/ParentCallback";
 
 const App = () => {
-  // const HocFunc = ParentHoc(ChildHoc);
+  const HocFunc = ParentHoc(ChildHoc);
+
+  const user = [
+    {
+      id: 1,
+      name: "John Doe",
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+    },
+  ];
+
   return (
     <div>
       {/* <ControlledComponents/> */}
@@ -29,13 +41,13 @@ const App = () => {
       {/* <UseEffect/> */}
       {/* <UseRef/> */}
       {/* <UseContext/> */}
-      {/* <UseMemo/> */}
+      {/* <UseMemo /> */}
       {/* <UseCallback/> */}
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
-      {/* <HocFunc /> */}
-      <ParentCallback />
+      <HocFunc user={user} />
+      {/* <ParentCallback /> */}
     </div>
   );
 };

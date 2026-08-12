@@ -18,6 +18,9 @@ const UseMemo = () => {
       <h2>{text}</h2>
       <h2>{triple}</h2>
 
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <br />
+      <br />
       <input
         type="text"
         placeholder="Enter Text..."
@@ -26,7 +29,6 @@ const UseMemo = () => {
           setText(e.target.value);
         }}
       />
-      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
   );
 };
