@@ -14,23 +14,25 @@
 // import Child from "./props/Child";
 // import Parent from "./props/Parent";
 // import SearchAndFilter from "./praticalQuestions/Searchable & Filterable List/SearchAndFilter";
-import ChildHoc from "./HOC/ChildHoc";
-import ParentHoc from "./HOC/ParentHoc";
+// import ChildHoc from "./HOC/ChildHoc";
+// import ParentHoc from "./HOC/ParentHoc";
 // import ParentCallback from "./callback/ParentCallback";
 
-const App = () => {
-  const HocFunc = ParentHoc(ChildHoc);
+import ParentCompForSib from "./pass_data_bwt_sibling_comp/ParentCompForSib";
 
-  const user = [
-    {
-      id: 1,
-      name: "John Doe",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-    },
-  ];
+const App = () => {
+  // const HocFunc = ParentHoc(ChildHoc);
+
+  // const user = [
+  //   {
+  //     id: 1,
+  //     name: "John Doe",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Jane Smith",
+  //   },
+  // ];
 
   return (
     <div>
@@ -46,8 +48,9 @@ const App = () => {
       {/* <AppRoutes/> */}
       {/* <Grid/> */}
       {/* <ContextApi/> */}
-      <HocFunc user={user} />
+      {/* <HocFunc user={user} /> */}
       {/* <ParentCallback /> */}
+      <ParentCompForSib/>
     </div>
   );
 };
